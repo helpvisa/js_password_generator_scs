@@ -12,7 +12,7 @@ function generatePassword() {
   var uppercase = document.querySelector("#uppercase-yes").checked;
   var numerics = document.querySelector("#numerics-yes").checked;
   var special = document.querySelector("#special-yes").checked;
-  console.log("lower:", lowercase, ";upper:", uppercase, ";numeric:", numerics, ";special:", special);
+  // comment-out testing code // console.log("lower:", lowercase, ";upper:", uppercase, ";numeric:", numerics, ";special:", special);
 
   // **** checks
   // make sure at least one character type is selected
