@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <!-- button to run code -->
+          <button id="generate" class="btn">Generate Password</button>
+          <!-- prompts for password criteria -->
+          <!-- password length -->
+          <p>
+            Password Length (8 - 128 characters):
+            <input type="number" name="length" value="16" id="length" />
+          </p>
+          <!-- include lowercase -->
+          <p>
+            Include Lowercase Letters?
+            <input type="radio" name="lowercase" id="lowercase-yes" checked />
+            <label for="lowercase-yes">Yes</label>
+            <input type="radio" name="lowercase" id="lowercase-no" />
+            <label for="lowercase-no">No</label>
+          </p>
+          <!-- include uppercase -->
+          <p>
+            Include Uppercase Letters?
+            <input type="radio" name="uppercase" id="uppercase-yes" checked />
+            <label for="uppercase-yes">Yes</label>
+            <input type="radio" name="uppercase" id="uppercase-no" />
+            <label for="uppercase-no">No</label>
+          </p>
+          <!-- include numerics -->
+          <p>
+            Include Numbers?
+            <input type="radio" name="numerics" id="numerics-yes" checked />
+            <label for="numerics-yes">Yes</label>
+            <input type="radio" name="numerics" id="numerics-no" />
+            <label for="numerics-no">No</label>
+          </p>
+          <!-- include special characters -->
+          <p>
+            Include Special Characters?
+            <input type="radio" name="special" id="special-yes" checked />
+            <label for="special-yes">Yes</label>
+            <input type="radio" name="special" id="special-no" />
+            <label for="special-no">No</label>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
