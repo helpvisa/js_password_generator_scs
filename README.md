@@ -15,6 +15,8 @@ The extent of its modifications include:
 
 This application does not store any of its generated data. Check for yourself!
 
+Live deployment available at: https://helpvisa.github.io/js_password_generator_scs/
+
 ### Preview
 ![Preview of the generator at work.](./preview.jpg)
 
